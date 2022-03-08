@@ -4,7 +4,5 @@
   source_url: ''
   search_parameters: 
     - endpoint: dblp
-      params: 
-        venue_key: conf/pacis
-        journal_abbreviated: pacis
+      params: SCOPE venue_key='conf/pacis' AND journal_abbreviated='pacis'
   comment: ''
