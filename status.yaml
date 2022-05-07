@@ -1,6 +1,6 @@
 atomic_steps: 45960
 colrev_status:
-  CURATED_records: 0
+  CURATED_records: 4595
   currently:
     exclusion: {}
     md_duplicates_removed: 5
