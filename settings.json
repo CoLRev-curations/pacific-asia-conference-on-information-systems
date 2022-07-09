@@ -15,7 +15,7 @@
     "sources": [
         {
             "filename": "search/DBLP.bib",
-            "search_type": "FEED",
+            "search_type": "DB",
             "source_name": "DBLP",
             "source_identifier": "{{dblp_key}}",
             "search_parameters": "SCOPE venue_key='conf/pacis' AND journal_abbreviated='pacis'",
@@ -30,7 +30,7 @@
         },
         {
             "filename": "search/pdfs.bib",
-            "search_type": "FEED",
+            "search_type": "PDFS",
             "source_name": "PDFs",
             "source_identifier": "{{file}}",
             "search_parameters": "SCOPE path='pdfs' WITH conference='Pacific-Asia Confereence on Information Systems' AND sub_dir_pattern='year'",
