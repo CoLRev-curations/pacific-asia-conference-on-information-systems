@@ -12,32 +12,39 @@
             "dblp_key"
         ]
     },
-    "search": {
-        "sources": [
-            {
-                "filename": "search/DBLP.bib",
-                "search_type": "FEED",
-                "source_name": "DBLP",
-                "source_identifier": "{{dblp_key}}",
-                "search_parameters": "SCOPE venue_key='conf/pacis' AND journal_abbreviated='pacis'",
-                "script": {
-                    "endpoint": "bib_pybtex"
-                },
-                "comment": ""
+    "sources": [
+        {
+            "filename": "search/DBLP.bib",
+            "search_type": "FEED",
+            "source_name": "DBLP",
+            "source_identifier": "{{dblp_key}}",
+            "search_parameters": "SCOPE venue_key='conf/pacis' AND journal_abbreviated='pacis'",
+            "search_script": {
+                "endpoint": "search_dblp"
             },
-            {
-                "filename": "search/pdfs.bib",
-                "search_type": "FEED",
-                "source_name": "PDFs",
-                "source_identifier": "{{file}}",
-                "search_parameters": "SCOPE path='pdfs' WITH conference='Pacific-Asia Confereence on Information Systems' AND sub_dir_pattern='year'",
-                "script": {
-                    "endpoint": "bib_pybtex"
-                },
-                "comment": ""
-            }
-        ]
-    },
+            "conversion_script": {
+                "endpoint": "bibtex"
+            },
+            "source_prep_scripts": [],
+            "comment": ""
+        },
+        {
+            "filename": "search/pdfs.bib",
+            "search_type": "FEED",
+            "source_name": "PDFs",
+            "source_identifier": "{{file}}",
+            "search_parameters": "SCOPE path='pdfs' WITH conference='Pacific-Asia Confereence on Information Systems' AND sub_dir_pattern='year'",
+            "search_script": {
+                "endpoint": "search_pdfs_dir"
+            },
+            "conversion_script": {
+                "endpoint": "bibtex"
+            },
+            "source_prep_scripts": [],
+            "comment": ""
+        }
+    ],
+    "search": {},
     "load": {},
     "prep": {
         "fields_to_keep": [],
@@ -348,9 +355,6 @@
             },
             {
                 "endpoint": "local_index"
-            },
-            {
-                "endpoint": "website_screenshot"
             },
             {
                 "endpoint": "website_screenshot"
