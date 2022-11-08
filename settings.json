@@ -47,7 +47,7 @@
                 "scope": {
                     "subdir_pattern": "year",
                     "type": "conference",
-                    "conference": "Pacific-Asia Confereence on Information Systems",
+                    "conference": "Pacific Asia Confereence on Information Systems",
                     "path": "data/pdfs"
                 }
             },
@@ -66,7 +66,7 @@
         "prep_rounds": [
             {
                 "name": "exclusion",
-                "similarity": 1.0,
+                "similarity": 1,
                 "prep_package_endpoints": [
                     {
                         "endpoint": "colrev_built_in.exclude_non_latin_alphabets"
