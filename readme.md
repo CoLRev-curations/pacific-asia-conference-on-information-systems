@@ -34,7 +34,7 @@ colrev env --install geritwagner/pacific-asia-conference-on-information-systems
 |2006          |             113|           *2*95|              NO|
 |2005          |             115|              98|              NO|
 |2004          |             144|             100|              NO|
-|2003          |             132|           *1*83|              NO|
+|2003          |             132|              83|              NO|
 |2001          |              84|           *1*83|              NO|
 |2000          |              84|              82|              NO|
 |1997          |              84|              84|                |
