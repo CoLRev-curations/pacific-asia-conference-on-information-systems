@@ -16,6 +16,7 @@ colrev env --install geritwagner/pacific-asia-conference-on-information-systems
 
 |TOC           |DBLP.bib        |pdfs.bib        |all_merged      |
 |--------------|----------------|----------------|----------------|
+|2022          |           *351*|               -|              NO|
 |2021          |             253|               -|              NO|
 |2020          |             242|             240|              NO|
 |2019          |             229|             229|                |
